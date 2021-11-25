@@ -1,0 +1,34 @@
+#signupForm {
+  display: inline-box;
+  text-align: center;
+  justify-content: center;
+  box-shadow: deepskyblue;
+}
+
+#signUpCred {
+    margin: 15px;
+  font-family: 'Comfort Brush', cursive;
+  font-size: 25px;
+  color: black;
+  text-shadow: whitesmoke 0px 0px 6px;
+  font-weight: bold;
+}
+
+#signupButton {
+    margin-right: 40px;
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  color: whitesmoke;
+  background: radial-gradient(gray, black);
+  border-radius: 5px;
+  border-style:none;
+  font-family: 'Comforter Brush', cursive;
+  font-size: 35px;
+}
+
+#signupButton:hover {
+  color: whitesmoke ;
+  background: radial-gradient(black, gray);
+  border-radius: 5px;
+}
