@@ -1,0 +1,87 @@
+#heading {
+  display: flexbox;
+  text-align: center;
+  text-decoration: underline overline;
+  font-family: 'Comforter Brush';
+  font-weight: bold;
+  font-size: 75px;
+  text-shadow: whitesmoke 0px 0px 6px;
+
+}
+
+
+#loginForm {
+  display: inline-box;
+  text-align: center;
+  justify-content: center;
+  box-shadow: deepskyblue;
+  /* background-color: rgb(134, 131, 131); */
+}
+
+input {
+  color: white;
+}
+#login-demo-button {
+  padding: 10px;
+}
+
+#loginButton {
+  margin-right: 40px;
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  color: whitesmoke;
+  background: radial-gradient(gray, black);
+  border-radius: 5px;
+  border-style:none;
+  font-family: 'Comforter Brush', cursive;
+  font-size: 35px;
+
+
+}
+
+#loginButton:hover {
+  color: whitesmoke ;
+  background: radial-gradient(black, gray);
+  border-radius: 5px;
+}
+
+#demoButton {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  color: whitesmoke;
+  background: radial-gradient( yellow, rgb(178, 9, 245), deepskyblue);
+  border-radius: 5px;
+  border-style: none;
+  font-family: 'Comforter Brush', cursive;
+  font-size: 35px;
+}
+
+#demoButton:hover {
+  margin-right: 10px;
+  color: whitesmoke;
+  background: radial-gradient( deepskyblue, rgb(178, 9, 245 ), yellow);
+  border-radius: 5px;
+}
+
+#username {
+  margin: 15px;
+  font-family: 'Comfort Brush', cursive;
+  font-size: 25px;
+  color: black;
+  text-shadow: whitesmoke 0px 0px 6px;
+  font-weight: bold;
+}
+
+#password {
+  font-family: 'Comfort Brush', cursive;
+  font-size: 25px;
+  color: black;
+  text-shadow: whitesmoke 0px 0px 6px;
+  font-weight: bold;
+}
+
+input {
+  margin: 5px;
+}
