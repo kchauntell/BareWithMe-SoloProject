@@ -14,14 +14,15 @@
   text-align: center;
   justify-content: center;
   box-shadow: deepskyblue;
-  /* background-color: rgb(134, 131, 131); */
 }
 
 input {
   color: white;
   border-radius: 5px;
-  border-style: hidden;
+  border: whitesmoke;
+  border-style: double;
   box-shadow: whitesmoke -3px 3px 5px;
+  margin: 5px;
 }
 #login-demo-button {
   padding: 10px;
@@ -81,8 +82,4 @@ input {
   color: black;
   text-shadow: whitesmoke 0px 0px 6px;
   font-weight: bold;
-}
-
-input {
-  margin: 5px;
 }
