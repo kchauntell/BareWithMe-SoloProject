@@ -26,45 +26,43 @@ function LoginFormPage() {
   }
 
   return (
-    <div>
-      <h1 id='heading'> MANIFEST YOUR TRUTH</h1>
-      <form
-        id='loginForm'
-        onSubmit={handleSubmit}>
-        <ul>
-          {errors.map((error, idx) => <li key={idx}>{error}</li>)}
-        </ul>
-        <div id='username'>
-          <label>
-            Username or Email:
-            <input
-              type="text"
-              value={credential}
-              onChange={(e) => setCredential(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div id='password'>
-          <label>
-            Password:
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div id='login-demo-button'>
-          <button id='loginButton' type="submit">Log In</button>
-          <button
-            id='demoButton'
-            onClick={() => { setCredential('DemoUs'); setPassword('passwordDemo') }}
-            type='submit'>Demo Us!</button>
-        </div>
-      </form>
-    </div>
+    <form
+      id='loginForm'
+      onSubmit={handleSubmit}>
+        <h1 id='heading'>MANIFEST YOU</h1>
+      <ul>
+        {errors.map((error, idx) => <li key={idx}>{error}</li>)}
+      </ul>
+      <div id='username'>
+        <label>
+          Username or Email:
+          <input
+            type="text"
+            value={credential}
+            onChange={(e) => setCredential(e.target.value)}
+            required
+          />
+        </label>
+      </div>
+      <div id='password'>
+        <label>
+          Password:
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </label>
+      </div>
+      <div id='login-demo-button'>
+        <button id='loginButton' type="submit">Log In</button>
+        <button
+          id='demoButton'
+          onClick={() => { setCredential('DemoUs'); setPassword('passwordDemo') }}
+          type='submit'>Demo Us!</button>
+      </div>
+    </form>
   );
 }
 

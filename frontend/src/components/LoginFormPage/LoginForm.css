@@ -4,9 +4,8 @@
   text-decoration: underline overline;
   font-family: 'Comforter Brush';
   font-weight: bold;
-  font-size: 75px;
   text-shadow: whitesmoke 0px 0px 6px;
-
+  font-size: 55px;
 }
 
 
@@ -36,7 +35,6 @@ input {
   border-style:none;
   font-family: 'Comforter Brush', cursive;
   font-size: 35px;
-
 
 }
 
