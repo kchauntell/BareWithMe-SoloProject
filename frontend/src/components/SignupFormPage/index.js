@@ -26,8 +26,9 @@ function SignupFormPage() {
           const data = await res.json();
           if (data && data.errors) setErrors(data.errors);
         });
+    } else {
+      return setErrors(['Confirm Password field must be the same as the Password field']);
     }
-    return setErrors(['Confirm Password field must be the same as the Password field']);
   };
 
   return (
@@ -38,7 +39,7 @@ function SignupFormPage() {
         {errors.map((error, idx) => <li key={idx}>{error}</li>)}
       </ul>
       <div id='signUpCred'>
-        <label>
+        <label htmlFor='firstName'>
           First Name
           <input
             type="text"
@@ -49,7 +50,7 @@ function SignupFormPage() {
         </label>
       </div>
       <div id='signUpCred'>
-        <label>
+        <label htmlFor='lastName'>
           Last Name
           <input
             type="text"
@@ -60,7 +61,7 @@ function SignupFormPage() {
         </label>
       </div>
       <div id='signUpCred'>
-        <label>
+        <label htmlFor='email'>
           Email
           <input
             type="text"
@@ -71,7 +72,7 @@ function SignupFormPage() {
         </label>
       </div>
       <div id='signUpCred'>
-        <label>
+        <label htmlFor='username'>
           Username
           <input
             type="text"
@@ -82,7 +83,7 @@ function SignupFormPage() {
         </label>
       </div>
       <div id='signUpCred'>
-        <label>
+        <label htmlFor='password'>
           Password
           <input
             type="password"
@@ -93,13 +94,12 @@ function SignupFormPage() {
         </label>
       </div>
       <div id='signUpCred'>
-        <label>
+        <label htmlFor='confirmPassword'>
           Confirm Password
           <input
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-            required
           />
         </label>
       </div>
